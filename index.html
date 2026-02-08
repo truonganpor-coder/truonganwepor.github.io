@@ -143,8 +143,7 @@
         /* QUAN TRỌNG: Giữ tỷ lệ 16/9, nhưng BỎ chiều cao cứng (768px) đi 
            để slider tự co giãn theo màn hình */
         aspect-ratio: 16/9;     
-        /* height: 768px;  <-- XÓA DÒNG NÀY ĐI */
-        
+        height: 768px; 
         margin: 0;              
         overflow: hidden;
         border-radius: 0;       
@@ -168,7 +167,7 @@
         /* Đổi từ 'cover' sang 'contain' */
         /* contain: Giúp ảnh hiển thị FULL tấm, không bị cắt, 
            nhưng có thể sẽ thừa khoảng trống 2 bên nếu ảnh không đúng tỷ lệ 16:9 */
-        object-fit: contain;       
+        object-fit: fill;       
         
         display: block;
     }
